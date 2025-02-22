@@ -3,12 +3,7 @@ FROM python:3.11-slim
 # Usamos el directorio actual como directorio de trabajo
 WORKDIR /api
 
-# Instalar dependencias del sistema
-RUN apt-get update && apt-get install -y \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
 
-# Instalar Poetry 2.1.1
 RUN pip install poetry==1.8.2
 
 # Agregar Poetry al PATH
