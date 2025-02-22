@@ -54,7 +54,7 @@ with st.form("api_form"):
             'native-country': native_country
         }
 
-        url = 'https://dockerexample-production.up.railway.app/adults_model/'
+        url = 'https://dockerexample-production-2002.up.railway.app/adults_model/'
 
         exito, respuesta = realizar_solicitud_post(url, datos_json)
 
